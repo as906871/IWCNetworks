@@ -18,10 +18,10 @@ const Adding = (props) => {
   useEffect(() => {
     loadData();
   }, []);
-  var dateInEpochTS = 1595314414299;
-  var now2 = moment(dateInEpochTS).format('dddd, MMMM Do, YYYY h:mm:ss A');
+  // var dateInEpochTS = 1595314414299;
+  var now2 = moment().format('dddd, MMMM Do, YYYY h:mm:ss A');
 
-  // const curDT = new Date().toLocaleString();
+  const curDT = new Date().toLocaleString();
 
   const deleteNote = (id) => {
     window.confirm("Are you sure that you want to delete ");
